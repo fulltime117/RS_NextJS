@@ -1,0 +1,21 @@
+.container {
+  position: fixed;
+  right: 0px;
+  top: 200px;
+}
+
+.container > div {
+  background-color: var(--text-color-secondary);
+  margin-bottom: 8px;
+  width: 53px;
+  height: 43px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+
+.container > div.active {
+  background-color: var(--primary-color);
+}

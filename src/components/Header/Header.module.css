@@ -1,0 +1,141 @@
+.container {
+  background-color: var(--background-color-light);
+}
+
+.innerContainer {
+  max-width: 1500px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 30px 15px;
+  justify-content: space-between;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 24px;
+}
+
+.rightContainer {
+  display: flex;
+  align-items: center;
+  color: var(--text-color-gray);
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.menuList {
+  margin-left: 50px;
+  display: none;
+}
+
+.logoTitle {
+  margin-left: 8px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.menuLink {
+  color: var(--text-color-gray);
+  margin: 0px 16px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.menuLink:hover {
+  color: var(--primary-color);
+}
+
+.mobileMenu {
+  position: fixed;
+	top: 0px;
+	left: 0px;
+	right: inherit;
+	z-index: 1100;
+	width: 0%;
+	height: 100%;
+	transition: all 0.5s ease 0s;
+	overflow: auto;
+  background: white;
+}
+
+.mobileMenu > div {
+  padding: 1.8em 1.8em 1.8em 1.8em;
+  font-size: 1.15em;
+}
+
+.mobileItem {
+  padding: 24px 24px 24px 0px;
+  border-bottom: 1px solid #efefef;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
+.menuIcon {
+  display: block;
+}
+
+.overLay {
+  position: fixed;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	background: #d8d8d84d;
+	opacity: 1;
+	transition: opacity 0.3s ease 0s;
+	top: 0px;
+	left: 0px;
+}
+
+.headerIcons {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .innerContainer {
+    width: 80%;
+  }
+  .logoTitle {
+    margin-left: 16px;
+    font-size: 32px;
+  }
+  .logoImage {
+    width: 36px;
+  }
+  .headerIcons {
+    display: flex;
+    align-items: center;
+  }
+  .logoTitle {
+    margin-left: 10px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menuIcon {
+    display: none;
+  }
+  .logoTitle {
+    margin-left: 16px;
+    font-size: 32px;
+  }
+  .menuList {
+    margin-left: 30px;
+    display: flex;
+  }
+}
+
+@media (min-width: 1200px) {
+  .menuList {
+    margin-left: 50px;
+  }
+}
